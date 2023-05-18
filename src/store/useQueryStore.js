@@ -14,7 +14,7 @@ const useQueryStore = create((set) => ({
 
 		try {
 			// fetch from external api's
-			const response = await api.post('/query-with-inverted', { url });
+			const response = await api.post('/api/query-with-inverted', { url });
 
 			set((state) => ({
 				results: response.data.data,
