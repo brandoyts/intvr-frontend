@@ -7,7 +7,8 @@ export default function Home() {
 	const { results, query, loading, error } = useQueryStore();
 
 	return (
-		<main className="flex justify-center items-center h-screen">
+		<main className="h-screen p-5 ">
+			<p className="text-center glitch">Response Inverter</p>
 			<Container>
 				<Form />
 				<Response title="URL Response" result={results && results?.original} />
